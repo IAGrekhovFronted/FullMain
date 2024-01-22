@@ -1,0 +1,855 @@
+$header_color: #4169E1;
+$font-family_text: 'Inter', sans-serif;
+
+@mixin images {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin subtitle_text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+// 300, 600
+
+body {
+    font-family: $font-family_text;
+    overflow-x: hidden;
+}
+
+.headerString {
+    height: 2.5em;
+    width: 100%;
+    background-color: $header_color;
+    font-size: 12px;
+    padding: 10px 20vw 0;
+
+    nav {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.wrapper {
+    padding: 0 20vw;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__text {
+    display: flex;
+    gap: 45px;
+    font-size: 16px;
+    padding: 25px 0;
+}
+
+.menu__tel {
+    padding-top: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.menu__tel::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-image: url(MicroPhone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    background-image: url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button__Sales {
+    width: 200px;
+    height: 60px;
+    background-color: #485c97;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 2px #4169E1;
+    color: white;
+    font-size: 20px;
+}
+
+.linkLocation {
+    position: relative;
+}
+
+.linkLocation::before {
+    content: "";
+    height: 35px;
+    width: 100px;
+    background-image: url(Flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -12px;
+    left: -100px;
+}
+
+// ======================От титульника=================
+.mediumWrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.oneSideWrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+        font-style: italic;
+        font-weight: 500;
+    }
+}
+
+.twoSideWrapper {
+    flex: 1.2;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.3em;
+
+    b {
+        color: #485c97;
+    }
+}
+
+.subtitle__text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5em;
+
+    v {
+        color: #485c97;
+    }
+}
+
+.oneSideWrapper__button {
+    font-weight: 400;
+    font-size: 26px;
+    width: 240px;
+    height: 80px;
+    color: white;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 2px #222222;
+}
+
+.videoWrapper {
+    position: relative;
+}
+
+.videoSubtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8em;
+
+    v {
+        color: #485c97;
+    }
+}
+
+.Backvideo {
+    width: 490px;
+    height: 270px;
+}
+
+.backText {
+    width: 550px;
+    height: 300px;
+    background-color: #4169E1;
+    opacity: 0.1;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    z-index: -1;
+}
+
+// ======================От GoodCompany=================
+.wrapper__goodCompany {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.log {
+    display: flex;
+
+    img {
+        margin: 15px;
+        height: 40px;
+    }
+
+    .bird {
+        margin-top: 23px;
+        height: 20px;
+    }
+
+    .bison {
+        width: 150px;
+    }
+}
+
+// ======================Синяя херня=================
+.bigString {
+    height: 200px;
+    width: 100%;
+    background-color: #485c97;
+    display: flex;
+    padding: 0 15vw;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
+
+    div {
+        position: relative;
+    }
+
+    l {
+        font-size: 36px;
+        font-weight: 800;
+    }
+}
+
+.beforeHonor::before {
+    content: "";
+    height: 100px;
+    width: 1px;
+    border: 2px solid white;
+    position: absolute;
+    top: -15px;
+    left: -100px;
+}
+
+// ======================После синей херни=================
+.wrapper__Map {
+    margin-top: 100px;
+    display: flex;
+
+    h2 {
+        line-height: 1.5em;
+        font-size: 40px;
+    }
+
+    v {
+        color: #485c97;
+    }
+
+    .subtitle_H2 {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .map {
+        background-image: url(FirstMap.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 600px;
+    }
+}
+
+// ======================Серая полоса=================
+.grey__string {
+    height: 400px;
+    width: 100%;
+    background-color: #d5d6db;
+    display: flex;
+    justify-content: center;
+    padding: 0 15vw;
+
+    .aboutMarketplace {
+        align-self: center;
+        line-height: 50px;
+    }
+
+    .subtitle_H2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.icon {
+    margin-top: 50px;
+    margin-right: 100px;
+    background-image: url(firstItemsIcon.png);
+    height: auto;
+    width: 635px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// ======================Погрузчик=================
+.wrapperTrack {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.imgTrack {
+    background-image: url(Pogruz.jpg);
+    height: 500px;
+    width: 1000px;
+    flex: 1.5;
+    @include images
+}
+
+.leftSide {
+    flex: 1;
+
+    h2 {
+        line-height: 1.3em;
+    }
+
+    .button__HowItWorks {
+        margin-top: 50px;
+        background-color: #485c97;
+        width: 385px;
+        height: 65px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        border-radius: 10px;
+        box-shadow: inset 1px 1px 2px #000;
+    }
+
+    .subtitleH2 {
+        margin-top: 15px;
+        @include subtitle_text()
+    }
+}
+
+.iconPreference {
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+
+    div {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.item__iconPreference {
+    position: relative;
+}
+
+.item__iconPreference::before {
+    content: "";
+    width: 2px;
+    height: 140px;
+    border: 2px solid rgb(204, 201, 201);
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+// ======================Раздел с hover=================
+.wrapperomnichannel {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.wrapperomnichannel_service {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .service_item {
+        border: 1px solid rgb(204, 201, 201);
+        border-radius: 10px;
+        flex: 1;
+        height: 220px;
+        padding: 10px;
+        line-height: 30px;
+
+        &:hover {
+            background-color: #485c97;
+            color: white;
+        }
+
+        .service_item_title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .service_item_subtitle {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        img {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// ===================Кулькулятор====================
+.veryBigBlueString_wrapper {
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: #d5d6db;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+
+    .USA_or_Canade {
+        display: flex;
+        background-color: #4169E1;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px #485c97;
+
+        .USA,
+        .Canada {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 0 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: #485c97;
+                border-radius: 10px;
+            }
+        }
+
+        .iconUSA {
+            height: 1.5em;
+        }
+
+        .iconCanada {
+            height: 3em;
+        }
+    }
+
+    .weight_product {
+        display: flex;
+        background-color: #4169E1;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px #485c97;
+        color: white;
+
+        .weight_product_item {
+            padding: 15px;
+            width: 100px;
+            cursor: pointer;
+            &:hover {
+                background-color: #485c97;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .price_and_product {
+        display: flex;
+        gap: 50px;
+
+        .examplePicturesProduct {
+            height: 400px;
+            width: 900px;
+            flex: 2.5;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background-color: #485c97;
+            display: flex;
+            .examplePicturesProduct_img {
+                flex: 1;
+                max-width: 450px;
+            }
+            .examplePicturesProduct_annotation {
+                flex: 1;
+                text-align: left;
+                padding: 15px;
+                color: white;
+                font-size: 20px;
+                line-height: 30px;
+                align-self: self-end;
+
+                .titleImgAnnotation {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+
+                div {
+                    ital {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        .priceProduct {
+            flex: 1;
+            color: white;
+
+            .priceProduct_item {
+                background-color: #4169E1;
+                font-size: 20px;
+                border-radius: 10px;
+                box-shadow: inset 2px 2px #485c97;
+                border: 1px solid white;
+                margin-bottom: 20px;
+                padding: 14px 10px;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+    }
+    .fulfimentPrices {
+        width: 300px;
+        height: 60px;
+        background-color: #000;
+        border-radius: 8px;
+        box-shadow: inset 1px 1px 2px #4169E1;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+}
+.priceProduct_cost::before {
+    content: "";
+    width: 1px;
+    height: 1em;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+// =====================Херня с диаграммами==========
+.newBigString {
+    background-color: #485c97;
+    padding: 50px 0;
+    
+    .wrapper_Grafics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        color: white;
+        
+        img {
+            border: 2px solid #000;
+            box-shadow: 2px 2px 4px #000;
+            border-radius: 50%;
+        }
+        .subtitlesH2 {
+            margin-top: 25px;
+            @include subtitle_text
+        }
+    }
+}
+.pickFlex {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    .subtitleH2 {
+        margin-top: 20px;
+        @include subtitle_text
+    }
+    img {
+        height: 400px;
+        width: auto;
+        transform: rotateZ(-30deg);
+    }
+}
+// ==============Херня с интерактивной картой
+.wrapperMap {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mapImage {
+        height: 695px;
+        width: 700px;
+        background-image: url(Map.png);
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .mapAbove {
+        height: 500px;
+        width: 500px;
+        background-image: url(MapAbove.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 18%;
+        left: 32.5%;
+        opacity: 0.7;
+
+        animation: 3s mapScale linear infinite alternate;
+    }
+
+    .MapLine {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #d5d6db;
+    }
+}
+
+// =====================Вопросы==========
+.wrapperAsk {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+
+    .subtitleText {
+        margin-top: 20px;
+        @include subtitle_text
+    }
+
+    .question {
+        margin-top: 50px;
+        transform: translateX(50px);
+        @include subtitle_text;
+        .ask_item {
+            width: 600px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            &:hover {
+                background-color: #485c97;
+                color: white;
+            }
+            &::after {
+                content: "";
+                width: 600px;
+                height: 1px;
+                border: 1px solid #d5d6db;
+                position: absolute;
+                bottom: 0;
+                opacity: 0.5;
+            }
+
+            .ask_item_text {
+                height: 2.6em;
+                overflow: hidden;
+            }
+
+            .strelka, .ask_item_text {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    img {
+        height: 300px;
+        width: auto;
+    }
+    .Ask_button {
+        margin-top: 50px;
+        width: 200px;
+        height: 60px;
+        background-color: #485c97;
+        border-radius: 8px;
+        box-shadow: inset 1px 1px 2px #4169E1;
+        color: white;
+        font-size: 20px;
+        transform: translateX(100%);
+    }
+    h3 {
+        margin-top: 50px;
+        font-weight: 700;
+        v {
+            color: #485c97;
+        }
+    }
+}
+.wrapper_carabilities {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    background-color: #485c97;
+    border-radius: 20px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+        img {
+        width: 550px;
+        height: auto;
+    }
+    .SUBTITLEh2 {
+        margin-top: 15px;
+        @include subtitle_text
+    }
+}
+.wrapper_support {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    img {
+        border-radius: 30px;
+    }
+    .subtitleH2 {
+        margin-top: 15px;
+        @include subtitle_text
+    }
+}
+.wrapper_Otzyv {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 70px;
+
+    .otzyvImage {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.wrapper_Choose {
+    margin-top: 50px;
+    background-color: #485c97;
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    gap: 50px;
+    .subtitleH2 {
+        @include subtitle_text
+    }
+    button {
+        width: 240px;
+        height: 80px;
+        background-color: #000;
+        color: white;
+        font-size: 24px;
+        border-radius: 20px;
+    }
+}
+footer {
+    margin-top: 100px;
+}
+.town {
+    width: 450px;
+    height: 200px;
+    background-image: url(Town.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.road {
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    transform: translateY(-13px);
+    position: relative;
+}
+.car_onroad {
+    width: 100px;
+    height: 70px;
+    background-image: url(carFooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -100px;
+
+    animation: moveCar 15s infinite;
+}
+
+@keyframes moveCar {
+    0% {
+        top: -20px;
+        left: -100px;
+    }
+    100% {
+        top: -20px;
+        left: 105vw;
+    }
+}
+
+@keyframes mapScale {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 100%;
+    }
+}
